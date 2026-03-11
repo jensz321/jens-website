@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fef5e7;
+  color: #44403c;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: #d97706;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b45309;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+section {
+  padding: 5rem 2rem;
+}
+
+section:not(.hero):not(.about-hero):not(.projects-hero):not(.contact-hero):not(.detail-hero):not(.final-cta):not(.about-cta):not(.detail-cta) {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: #44403c;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  color: #44403c;
+  letter-spacing: -0.3px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #44403c;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #44403c;
+  font-weight: 400;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef5e7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
