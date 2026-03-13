@@ -210,8 +210,9 @@
 
 .btn-primary:hover {
   background-color: #b45309;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(217, 119, 6, 0.2);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(217, 119, 6, 0.3);
+  color: #ffffff;
 }
 
 .btn-secondary {
@@ -227,8 +228,8 @@
 .btn-secondary:hover {
   background-color: #44403c;
   color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(68, 64, 60, 0.2);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(68, 64, 60, 0.3);
 }
 
 .btn-large {
