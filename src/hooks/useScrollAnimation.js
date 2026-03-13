@@ -19,7 +19,7 @@ export function useScrollAnimation() {
     // Observe all elements with animation classes
     const animatedElements = document.querySelectorAll(
       '.service-item, .work-card, .skill-category, .approach-card, ' +
-      '.who-content p, .project-card, .contact-card, ' +
+      '.project-card, .contact-card, ' +
       '.skill-column, .story-content p'
     )
 

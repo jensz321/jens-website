@@ -8,7 +8,6 @@
 .project-card,
 .contact-card,
 .skill-column,
-.who-content p,
 .story-content p {
   opacity: 0;
   transform: translateY(30px);
