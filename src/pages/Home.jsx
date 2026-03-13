@@ -64,7 +64,7 @@ export default function Home() {
       {/* Featured Works Section */}
       <section className="featured-works">
         <div className="section-wrapper">
-          <h2>uitgelichte werken</h2>
+          <h2>featured projects</h2>
           <div className="works-grid">
             {projects.filter(p => p.featured).map((project, index) => {
               const isExternal = project.link && project.link.startsWith('http')
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div className="view-all-wrapper">
             <Link to="/projects" className="view-all">
-              alle werken bekijken
+              view all projects
               <span className="arrow">→</span>
             </Link>
           </div>
