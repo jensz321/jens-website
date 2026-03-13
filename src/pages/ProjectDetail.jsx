@@ -24,7 +24,7 @@ export default function ProjectDetail() {
     <div className="project-detail">
       <section className="detail-hero">
         <div className="section-wrapper">
-          <Link to="/projects" className="back-link">← Terug naar Werken</Link>
+          <Link to="/projects" className="back-link">← terug naar werken</Link>
           <h1>{project.title}</h1>
           <p className="project-description">{project.description}</p>
         </div>
@@ -40,19 +40,19 @@ export default function ProjectDetail() {
         <div className="section-wrapper">
           <div className="content-grid">
             <div className="project-main">
-              <h2>Over Dit Project</h2>
+              <h2>over dit project</h2>
               <p>Dit is een plek om je project in detail te beschrijven. Praat over het probleem dat je hebt opgelost, de aanpak die je hebt genomen en de resultaten die je hebt bereikt.</p>
 
-              <h2>De Uitdaging</h2>
+              <h2>de uitdaging</h2>
               <p>Welk probleem probeerde je op te lossen? Wat waren de beperkingen en vereisten?</p>
 
-              <h2>De Oplossing</h2>
+              <h2>de oplossing</h2>
               <p>Hoe benader je de oplossing? Welke beslissingen heb je genomen en waarom?</p>
 
-              <h2>Lessen</h2>
+              <h2>lessen</h2>
               <p>Wat heb je van dit project geleerd? Wat zou je volgende keer anders doen?</p>
 
-              <h2>Het Resultaat</h2>
+              <h2>het resultaat</h2>
               <p>Wat was de uitkomst? Wat voor impact had het?</p>
             </div>
 
@@ -80,9 +80,9 @@ export default function ProjectDetail() {
 
       <section className="detail-cta">
         <div className="section-wrapper">
-          <h2>Meer Projecten</h2>
+          <h2>meer projecten</h2>
           <Link to="/projects" className="btn btn-primary btn-large">
-            Alle Werken Bekijken
+            alle werken bekijken
           </Link>
         </div>
       </section>

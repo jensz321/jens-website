@@ -13,17 +13,17 @@ export default function Footer() {
         </div>
 
         <div className="footer-section">
-          <h4>Navigatie</h4>
+          <h4>navigatie</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">Over Mij</Link></li>
+            <li><Link to="/about">over mij</Link></li>
             <li><Link to="/projects">Werken</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
         <div className="footer-section">
-          <h4>Verbind Met Me</h4>
+          <h4>verbind met me</h4>
           <ul>
             <li><a href="mailto:jens@vanduinkerken.net">E-mail</a></li>
             <li><a href="https://github.com/jensz321" target="_blank" rel="noopener noreferrer">GitHub</a></li>

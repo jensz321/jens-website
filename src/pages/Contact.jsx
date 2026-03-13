@@ -10,7 +10,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="section-wrapper">
-          <h1>Neem Contact Op</h1>
+          <h1>neem contact op</h1>
           <p className="hero-subtitle">Voel je vrij om contact op te nemen via e-mail of LinkedIn. Ik geef de voorkeur aan e-mail- of LinkedIn-verbindingen, en ik ben altijd graag bereid om nieuwe mogelijkheden en projecten te bespreken.</p>
         </div>
       </section>

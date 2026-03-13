@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { projects } from '../data/projects'
 import '../styles/Home.css'
 import '../styles/scrollAnimations.css'
 
@@ -12,13 +13,13 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <h1>Ik ben Jens,<br />Software Developer</h1>
-          <p className="hero-subtitle">Digitale Oplossingen Bouwen Die Ertoe Doen</p>
+          <p className="hero-subtitle">digitale oplossingen bouwen die ertoe doen</p>
           <div className="hero-cta">
             <Link to="/projects" className="btn btn-primary">
-              Mijn Werk Bekijken
+              mijn werk bekijken
             </Link>
             <Link to="/contact" className="btn btn-secondary">
-              Contact Opnemen
+              contact opnemen
             </Link>
           </div>
         </div>
@@ -27,7 +28,7 @@ export default function Home() {
       {/* Who I Am Section */}
       <section className="who-am-i">
         <div className="section-wrapper">
-          <h2>Wie Ben Ik</h2>
+          <h2>wie ben ik</h2>
           <div className="who-content">
             <p>Ik ben een 19-jarige student softwareontwikkeling uit Nederland. Ik ben altijd geïnteresseerd geweest in technologie en hoe dingen werken. Ik hou vooral van het bouwen van dingen zelf en het omzetten van ideeën in werkende digitale oplossingen.</p>
             <p>Tot nu toe heb ik me vooral gericht op webontwikkeling met HTML, CSS, JavaScript en API's, maar ik ben nieuwsgierig naar veel verschillende gebieden binnen softwareontwikkeling. Ik geniet ervan om nieuwe vaardigheden te leren en mezelf uit te dagen met nieuwe projecten.</p>
@@ -38,7 +39,7 @@ export default function Home() {
       {/* What I Do Section */}
       <section className="what-i-do">
         <div className="section-wrapper">
-          <h2>Wat Ik Doe</h2>
+          <h2>wat ik doe</h2>
           <div className="services-grid">
             <div className="service-item">
               <h3>Webontwikkeling</h3>
@@ -63,22 +64,32 @@ export default function Home() {
       {/* Featured Works Section */}
       <section className="featured-works">
         <div className="section-wrapper">
-          <h2>Uitgelichte Werken</h2>
+          <h2>uitgelichte werken</h2>
           <div className="works-grid">
-            <Link to="/projects/examenproject" className="work-card">
-              <div className="work-image">
-                <div className="placeholder">Examenproject</div>
-              </div>
-              <div className="work-info">
-                <h3>Examenproject</h3>
-                <p className="work-desc">Een uitgebreid portfolioproject gebouwd met React en Node.js</p>
-                <p className="work-meta">React • Node.js • MongoDB</p>
-              </div>
-            </Link>
+            {projects.filter(p => p.featured).map((project, index) => {
+              const isExternal = project.link && project.link.startsWith('http')
+              const Component = isExternal ? 'a' : Link
+              const props = isExternal
+                ? { href: project.link, target: '_blank', rel: 'noopener noreferrer' }
+                : { to: `/projects/${project.id}` }
+
+              return (
+                <Component key={project.id} {...props} className="work-card" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div className="work-image">
+                    <div className="placeholder">{project.title}</div>
+                  </div>
+                  <div className="work-info">
+                    <h3>{project.title}</h3>
+                    <p className="work-desc">{project.description}</p>
+                    <p className="work-meta">{project.tags.join(' • ')}</p>
+                  </div>
+                </Component>
+              )
+            })}
           </div>
           <div className="view-all-wrapper">
             <Link to="/projects" className="view-all">
-              Alle Werken Bekijken
+              alle werken bekijken
               <span className="arrow">→</span>
             </Link>
           </div>
@@ -88,10 +99,10 @@ export default function Home() {
       {/* Skills Section */}
       <section className="skills">
         <div className="section-wrapper">
-          <h2>Vaardigheden & Technologieën</h2>
+          <h2>vaardigheden & technologieën</h2>
           <div className="skills-columns">
             <div className="skill-column">
-              <h4>Frontend</h4>
+              <h4>frontend</h4>
               <ul className="tech-list">
                 <li>HTML & CSS</li>
                 <li>JavaScript</li>
@@ -101,7 +112,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="skill-column">
-              <h4>Backend & Databases</h4>
+              <h4>backend & databases</h4>
               <ul className="tech-list">
                 <li>Node.js (basis)</li>
                 <li>Express (basis)</li>
@@ -111,7 +122,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="skill-column">
-              <h4>Tools & Zachte Vaardigheden</h4>
+              <h4>tools & zachte vaardigheden</h4>
               <ul className="tech-list">
                 <li>Git & GitHub</li>
                 <li>VS Code</li>
@@ -127,10 +138,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="final-cta">
         <div className="section-wrapper cta-content">
-          <h2>Klaar om Iets<br />Geweldigs Te Bouwen?</h2>
+          <h2>klaar om iets<br />geweldigs te bouwen?</h2>
           <p>Laten we digitale ervaringen creëren die ertoe doen</p>
           <Link to="/contact" className="btn btn-primary btn-large">
-            Contact Opnemen
+            contact opnemen
           </Link>
         </div>
       </section>

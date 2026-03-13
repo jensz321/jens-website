@@ -10,15 +10,15 @@ export default function About() {
       {/* Hero Section */}
       <section className="about-hero">
         <div className="section-wrapper">
-          <h1>Over Mij</h1>
-          <p className="hero-subtitle">Software Developer & Levenslang Lerende</p>
+          <h1>over mij</h1>
+          <p className="hero-subtitle">Software developer & levenslang lerende</p>
         </div>
       </section>
 
       {/* Story Section */}
       <section className="story">
         <div className="section-wrapper">
-          <h2>Mijn Verhaal</h2>
+          <h2>mijn verhaal</h2>
           <div className="story-content">
             <p>
               Ik ben altijd goed geweest met technologie en logisch denken. Na het zoeken naar de juiste opleiding heb ik ICT gevonden en ben ik aan mijn softwareontwikkelingtraject begonnen. Ik genoot van het puzzelaspect van het leren van code, en vandaag werk ik naar mijn passie voor het bouwen van digitale oplossingen.
@@ -36,11 +36,11 @@ export default function About() {
       {/* Skills Section */}
       <section className="skills-detailed">
         <div className="section-wrapper">
-          <h2>Vaardigheden & Expertise</h2>
+          <h2>vaardigheden & expertise</h2>
 
           <div className="skills-matrix">
             <div className="skill-category">
-              <h3>Frontend Ontwikkeling</h3>
+              <h3>frontend ontwikkeling</h3>
               <ul className="skill-list">
                 <li>React & React Hooks</li>
                 <li>JavaScript ES6+</li>
@@ -52,7 +52,7 @@ export default function About() {
             </div>
 
             <div className="skill-category">
-              <h3>Backend Ontwikkeling</h3>
+              <h3>backend ontwikkeling</h3>
               <ul className="skill-list">
                 <li>Node.js & Express</li>
                 <li>RESTful APIs</li>
@@ -64,7 +64,7 @@ export default function About() {
             </div>
 
             <div className="skill-category">
-              <h3>Ontwerp & UX</h3>
+              <h3>ontwerp & UX</h3>
               <ul className="skill-list">
                 <li>UI/UX Ontwerp</li>
                 <li>Figma</li>
@@ -76,7 +76,7 @@ export default function About() {
             </div>
 
             <div className="skill-category">
-              <h3>Tools & Praktijken</h3>
+              <h3>tools & praktijken</h3>
               <ul className="skill-list">
                 <li>Git & GitHub</li>
                 <li>Testen & QA</li>
@@ -93,22 +93,22 @@ export default function About() {
       {/* Approach Section */}
       <section className="approach">
         <div className="section-wrapper">
-          <h2>Mijn Aanpak</h2>
+          <h2>mijn aanpak</h2>
           <div className="approach-grid">
             <div className="approach-card">
-              <h3>Probleemoplossing Focus</h3>
+              <h3>probleemoplossing focus</h3>
               <p>Ik geniet ervan uitdagingen te analyseren en deze op te splitsen in beheersbare stappen. Mijn aanpak is om het probleem volledig te begrijpen voordat ik een efficiënte en betrouwbare oplossing bouw.</p>
             </div>
             <div className="approach-card">
-              <h3>Continu Leren</h3>
+              <h3>continu leren</h3>
               <p>Ik ben altijd graag bezig met het leren van nieuwe technologieën en technieken. Ik zie elk project als een kans om mijn vaardigheden uit te breiden en up-to-date te blijven in het snel veranderende veld van softwareontwikkeling.</p>
             </div>
             <div className="approach-card">
-              <h3>Gebruiker-Gericht Ontwikkeling</h3>
+              <h3>gebruiker-gericht ontwikkeling</h3>
               <p>Ik streef ernaar software te creëren die intuïtief en gebruikersvriendelijk is. Het begrijpen van de behoeften van gebruikers helpt me oplossingen te ontwerpen die niet alleen functioneel zijn, maar ook aangenaam om mee om te gaan.</p>
             </div>
             <div className="approach-card">
-              <h3>Praktisch Experimenteren</h3>
+              <h3>praktisch experimenteren</h3>
               <p>Ik geloof dat de beste manier om te leren door bouwen en experimenteren is. Ik geniet ervan nieuwe ideeën uit te proberen, verschillende benaderingen te testen en te itereren totdat de oplossing goed werkt.</p>
             </div>
           </div>
@@ -118,10 +118,10 @@ export default function About() {
       {/* CTA Section */}
       <section className="about-cta">
         <div className="section-wrapper">
-          <h2>Laten We Samenwerken</h2>
+          <h2>laten we samenwerken</h2>
           <p>Heb je een project in gedachten? Laten we praten over hoe ik je visie tot leven kan brengen.</p>
           <a href="/contact" className="btn btn-primary btn-large">
-            Contact Opnemen
+            contact opnemen
           </a>
         </div>
       </section>
