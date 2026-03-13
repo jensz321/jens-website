@@ -23,7 +23,7 @@ export default function Navbar() {
         <ul className="navbar-menu">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">over mij</Link></li>
-          <li><Link to="/projects">Werken</Link></li>
+          <li><Link to="/projects">projecten</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>

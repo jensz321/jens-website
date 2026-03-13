@@ -12,7 +12,7 @@ export default function Projects() {
       {/* Hero Section */}
       <section className="projects-hero">
         <div className="section-wrapper">
-          <h1>projects</h1>
+          <h1>projecten</h1>
           <p className="hero-subtitle">Een verzameling van projecten die ik heb gebouwd. Elk vertelt een verhaal van probleemoplossing en creativiteit.</p>
         </div>
       </section>

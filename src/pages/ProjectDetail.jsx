@@ -24,7 +24,7 @@ export default function ProjectDetail() {
     <div className="project-detail">
       <section className="detail-hero">
         <div className="section-wrapper">
-          <Link to="/projects" className="back-link">← back to projects</Link>
+          <Link to="/projects" className="back-link">← terug naar projecten</Link>
           <h1>{project.title}</h1>
           <p className="project-description">{project.description}</p>
         </div>
@@ -82,7 +82,7 @@ export default function ProjectDetail() {
         <div className="section-wrapper">
           <h2>meer projecten</h2>
           <Link to="/projects" className="btn btn-primary btn-large">
-            view all projects
+            alle projecten bekijken
           </Link>
         </div>
       </section>
