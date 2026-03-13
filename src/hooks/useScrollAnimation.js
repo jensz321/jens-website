@@ -9,7 +9,7 @@ export function useScrollAnimation() {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
           entry.target.classList.add('animate-in')
           observer.unobserve(entry.target)
         }

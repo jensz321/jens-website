@@ -1,6 +1,6 @@
 /* Scroll Animation Classes */
 
-/* Default state - visible but ready for animation */
+/* Default state - hidden until scrolled into view */
 .service-item,
 .work-card,
 .skill-category,
@@ -8,8 +8,10 @@
 .project-card,
 .contact-card,
 .skill-column,
+.who-content p,
 .story-content p {
-  opacity: 1;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 /* When scrolled into view: Animate in */
