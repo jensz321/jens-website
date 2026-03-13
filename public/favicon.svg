@@ -1,21 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-  <!-- Background -->
-  <rect width="256" height="256" fill="#1a1a1a" rx="56"/>
+  <!-- Dark background -->
+  <rect width="256" height="256" fill="#1f2937" rx="56"/>
 
-  <!-- Decorative circle accent -->
-  <circle cx="128" cy="128" r="110" fill="none" stroke="#d97706" stroke-width="3" opacity="0.3"/>
+  <!-- Subtle accent ring -->
+  <circle cx="128" cy="128" r="110" fill="none" stroke="#e5e7eb" stroke-width="2" opacity="0.15"/>
 
   <!-- Letter J -->
   <g transform="translate(128, 128)">
-    <!-- Main vertical stroke of J -->
-    <path d="M -15 -50 L -15 20 Q -15 45 -5 55 L 15 55"
-          stroke="#d97706"
-          stroke-width="20"
+    <!-- Main vertical stroke of J (properly oriented) -->
+    <path d="M 18 -50 L 18 25 Q 18 50 0 60 L -20 60"
+          stroke="#f3f4f6"
+          stroke-width="22"
           stroke-linecap="round"
           stroke-linejoin="round"
           fill="none"/>
-
-    <!-- Small accent dot -->
-    <circle cx="0" cy="-65" r="6" fill="#d97706" opacity="0.6"/>
   </g>
 </svg>
