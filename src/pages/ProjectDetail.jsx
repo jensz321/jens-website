@@ -12,7 +12,7 @@ export default function ProjectDetail() {
   if (!project) {
     return (
       <section className="project-detail">
-        <h1>Project niet gevonden</h1>
+        <h1>project niet gevonden</h1>
         <Link to="/projects" className="btn btn-primary">
           Terug naar projecten
         </Link>

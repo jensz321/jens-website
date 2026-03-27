@@ -50,7 +50,7 @@ export default function Home() {
               <p>Ik creëer intuïtieve interfaces en dynamische gebruikerservaringen, waardoor webapplicaties tot leven komen met moderne frontend-technologieën en best practices.</p>
             </div>
             <div className="service-item">
-              <h3>Softwareprojecten</h3>
+              <h3>softwareprojecten</h3>
               <p>Ik ontwikkel op maat gemaakte softwareoplossingen, experimenteer met verschillende programmeertalen en tools om problemen uit de praktijk efficiënt op te lossen.</p>
             </div>
             <div className="service-item">

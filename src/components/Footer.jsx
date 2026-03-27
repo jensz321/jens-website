@@ -15,10 +15,10 @@ export default function Footer() {
         <div className="footer-section">
           <h4>navigatie</h4>
           <ul>
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/">home</Link></li>
             <li><Link to="/about">over mij</Link></li>
-            <li><Link to="/projects">Werken</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/projects">projecten</Link></li>
+            <li><Link to="/contact">contact</Link></li>
           </ul>
         </div>
 
