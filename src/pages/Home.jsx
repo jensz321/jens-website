@@ -107,18 +107,18 @@ export default function Home() {
                 <li>HTML & CSS</li>
                 <li>JavaScript</li>
                 <li>Bootstrap</li>
-                <li>React (basis)</li>
+                <li>React</li>
                 <li>Responsive Design</li>
               </ul>
             </div>
             <div className="skill-column">
               <h4>backend & databases</h4>
               <ul className="tech-list">
-                <li>Node.js (basis)</li>
-                <li>Express (basis)</li>
+                <li>Node.js</li>
+                <li>Express</li>
                 <li>APIs</li>
-                <li>MySQL (basis)</li>
-                <li>MongoDB (basis)</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
               </ul>
             </div>
             <div className="skill-column">
