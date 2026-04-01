@@ -20,14 +20,14 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path="/april-fools" element={<AprilFools />} />
+        <Route path="/" element={<AprilFools />} />
         <Route
           path="/*"
           element={
             <>
               <Navbar />
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/april-fools" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/projects/:id" element={<ProjectDetail />} />
                 <Route path="/about" element={<About />} />
