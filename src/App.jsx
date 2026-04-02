@@ -8,7 +8,6 @@ import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import AprilFools from './pages/AprilFools'
 
 function ScrollToTop() {
   useScrollToTop()
@@ -19,25 +18,15 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Navbar />
       <Routes>
-        <Route path="/" element={<AprilFools />} />
-        <Route
-          path="/*"
-          element={
-            <>
-              <Navbar />
-              <Routes>
-                <Route path="/april-fools" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/projects/:id" element={<ProjectDetail />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
-              <Footer />
-            </>
-          }
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
